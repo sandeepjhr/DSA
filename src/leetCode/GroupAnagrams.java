@@ -24,6 +24,7 @@ public class GroupAnagrams {
                map.put(sortedWord,origWordList);
            }
        }
+
         return new ArrayList<>(map.values());
     }
 }
