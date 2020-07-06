@@ -25,6 +25,7 @@ public class TopNcompetitor {
         reviews1.add("I am proud to have fashionbeats");
         reviews1.add("mymarket has awesome services");
         reviews1.add("Thanks Newshop for the quick delivery");
+
         ArrayList<String> reviews2 = new ArrayList<>();
         reviews2.add("I love anacell Best services; Best services provided by anacell");
         reviews2.add("betacellular has great services");
@@ -40,12 +41,12 @@ public class TopNcompetitor {
         HashMap<String, Integer> map = new HashMap<>();
         for(String comp: competitors){
             for(String rev: reviews){
-                rev.toLowerCase();
-                if(rev.contains(comp)){
+                if(rev.toLowerCase().contains(comp)){
                     map.put(comp,map.getOrDefault(comp, 0)+1); // putting all the competitors with its total count in the map
                 }
             }
         }
+
         ArrayList<String> tempKeys = new ArrayList<>();
         for(String key : map.keySet()){
                 tempKeys.add(key); // storing all the keys of map in a list of String
