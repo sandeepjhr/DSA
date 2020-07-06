@@ -1,6 +1,4 @@
 package leetCode;
-
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,9 +9,7 @@ public class MostCommonWord {
         String[] banned = {"hit"};
         String paragraph2 = "abc abc? abcd the jeff!";
         String[] banned2 = {"abc","abcd","jeff"};
-
         System.out.println(mostCommon2(paragraph2, banned2));
-
     }
 
     private static String mostCommon(String paragraph, String[] banned){
