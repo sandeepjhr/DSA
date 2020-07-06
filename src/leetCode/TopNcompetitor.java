@@ -73,9 +73,9 @@ public class TopNcompetitor {
                 }
             }
         }
-        ArrayList<String> in = new ArrayList<String>();
-        for(String s: set) in.add(s);
+        ArrayList<String> finalResult = new ArrayList<String>();
+        for(String s: set) finalResult.add(s);
 
-        return in;
+        return finalResult;
     }
 }
