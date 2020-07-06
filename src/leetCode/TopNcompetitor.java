@@ -62,7 +62,6 @@ public class TopNcompetitor {
             }
         });
 
-
         HashSet<String> set = new HashSet<>();
         for(int i = 0; i < topNCompetitors; i++){ // will fetch first top N values from countList and add its corresponding key in the set
             int val = countList.get(i);
