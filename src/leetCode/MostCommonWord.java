@@ -9,7 +9,6 @@ public class MostCommonWord {
         String[] banned = {"hit"};
         String paragraph2 = "abc abc? abcd the jeff!";
         String[] banned2 = {"abc","abcd","jeff"};
-
         System.out.println(mostCommon2(paragraph2, banned2));
     }
 
