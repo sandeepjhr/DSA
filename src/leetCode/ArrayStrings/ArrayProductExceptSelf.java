@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.ArrayStrings;
 
 public class ArrayProductExceptSelf {
     public static void main(String[] args) {

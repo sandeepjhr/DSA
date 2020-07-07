@@ -1,4 +1,4 @@
-package leetCode;
+package leetCode.ArrayStrings;
 
 public class ReverseString {
     private void reverseString(char[] s){
