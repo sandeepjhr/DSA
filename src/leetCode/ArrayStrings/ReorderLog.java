@@ -26,7 +26,6 @@ public class ReorderLog {
             if(Character.isLetter(a)) strLog.add(log);
             else digLog.add(log);
         }
-
         Collections.sort(strLog, new XYZ()); // sorting the stringList using custom sorting logic
 
         String[] finalArray = new String[logs.length];
