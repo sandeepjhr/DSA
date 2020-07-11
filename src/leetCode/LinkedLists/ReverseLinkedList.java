@@ -44,7 +44,6 @@ public class ReverseLinkedList {
             prev = head;
             head = nextNode;
         }
-
         return prev;
     }
 }
