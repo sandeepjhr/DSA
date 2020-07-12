@@ -64,8 +64,6 @@ public class ReverseNodesKGroup {
             if(count == k){
                 prev.next = reverse(start,k);
                 prev = start;
-                System.out.println(prev);
-                System.out.println(dummy);
             }
 
             //if count is not equals k it means we need not reverse the list
