@@ -1,7 +1,7 @@
 package leetCode.LinkedLists;
 
 public class ReverseNodesKGroup {
-    public static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
 
@@ -28,7 +28,7 @@ public class ReverseNodesKGroup {
         l2.next = l3;
         l3.next = l4;
         l4.next = l5;
-        ListNode result = reverseKGroup(l1, 3);
+        ListNode result = reverseKGroup(l1, 2);
         while (result != null) {
             System.out.print(result.val + ",");
             result = result.next;

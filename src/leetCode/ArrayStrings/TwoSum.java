@@ -16,7 +16,7 @@ public class TwoSum {
 
     public static void main(String[] args) {
         int[] input2 = {2,7,11,15};
-        int requiredTotal = 99;
+        int requiredTotal = 18;
         int[] output = twoSumFind(input2, requiredTotal);
         System.out.println(output[0] + "  " + output[1]);
     }

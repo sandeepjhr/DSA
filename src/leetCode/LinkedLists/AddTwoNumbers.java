@@ -1,13 +1,23 @@
 package leetCode.LinkedLists;
 
 public class AddTwoNumbers {
-    public static class ListNode{
+    private static class ListNode {
         int val;
         ListNode next;
-        ListNode(){}
-        ListNode(int val){this.val = val;}
-        ListNode(int val, ListNode next){this.val= val;this.next=next;}
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
+
     public static void main(String[] args) {
         ListNode l1 = new ListNode(2);
         ListNode l2 = new ListNode(4);
@@ -21,21 +31,20 @@ public class AddTwoNumbers {
         l4.next = l5;
         l5.next = l6;
 
-        ListNode  result = addTwoNo(l1, l4);
-        while(result!=null){
-            System.out.print(result.val+",");
+        ListNode result = addTwoNo(l1, l4);
+        while (result != null) {
+            System.out.print(result.val + ",");
             result = result.next;
         }
 
     }
 
     /**
-     *
-     *Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
+     * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
      * Output: 7 -> 0 -> 8
      * Explanation: 342 + 465 = 807.
      */
-    private static ListNode addTwoNo(ListNode l1, ListNode l2){
+    private static ListNode addTwoNo(ListNode l1, ListNode l2) {
 
         ListNode dummy = new ListNode(0);
         ListNode first = dummy;
@@ -50,7 +59,7 @@ public class AddTwoNumbers {
                 carry += l2.val;
                 l2 = l2.next;
             }
-            first.next = new ListNode(carry%10);
+            first.next = new ListNode(carry % 10);
             carry /= 10;
             first = first.next;
         }
