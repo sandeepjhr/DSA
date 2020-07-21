@@ -65,7 +65,6 @@ public class MergeKSortedLists {
          * After fetching smallest, add the next item of that node into the PQ and keep repeating this process until
          * PQ become empty
          */
-
         while (!pq.isEmpty()) {
             Node n = pq.poll();
             if (n.next != null) {
