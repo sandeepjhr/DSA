@@ -12,7 +12,6 @@ public class NumberIsland {
                 }
             }
         }
-
         return result;
     }
 
